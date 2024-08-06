@@ -1,0 +1,8 @@
+What is the sequence of events when you call dynamicArray, printArray, 
+and arrayMax in this part?
+- I will initialise a dynamic array, print all values in that array, and find the maximum 
+value in the array.
+
+What would happen if we deallocated the dynamic array before calling arrayMax or printArray?
+- There will be segmentation fault because we dont have access deallocated memory in the 
+dynamic array.

@@ -1,0 +1,9 @@
+What is the purpose of the delete[] keyword and why is it important to use it?
+- delete[] is used to deallocate the allocated dynamic memory 
+- this is important because if we dont delete[] after finishing working with that dynamic 
+memory, we can face with running out of memory. 
+
+What might happen if you forget to deallocate the dynamic array?
+- when we want to allocate a new dynamic array, a different memory in the heap will be allocated
+since the previous allocated array hasnt been deleted; thus the computer assumes that that 
+memory is still in use.
