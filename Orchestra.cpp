@@ -21,7 +21,7 @@ Orchestra::Orchestra(int size) {
 
 // returns the number of musicians who have joined the orchestra
 int Orchestra::get_current_number_of_members(){
-    return size;
+    return current_index;
 }
 // returns true if any musician in the orchestra plays the specified instrument
 // otherwise returns false
@@ -40,7 +40,7 @@ Musician* Orchestra::get_members(){
 // returns true and adds new musician to the orchestra if the orchestra is not full
 // otherwise returns false
 bool Orchestra::add_musician(Musician new_musician){
-    if (current_index < size) {
+    if (current_index <= size) {
         arrayMember[current_index] = new_musician;
         current_index++;
         return true;
