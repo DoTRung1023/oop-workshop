@@ -13,8 +13,8 @@ private:
     string weapon;
 public:
     Warrior(string name, int health, int damage, string weapon);
-    string get_weapon();
-    void set_weapon(string weapon);
+    string getWeapon();
+    void setWeapon(string weapon);
     void swingWeapon(Player* opponent);
 };
 

@@ -18,13 +18,13 @@ public:
     void attack(Player* opponent, int(damage));
     void takeDamage(int damage);
 
-    string get_name() ;
-    int get_health();
-    int get_damage();
+    string getName() ;
+    int getHealth();
+    int getDamage();
 
-    void set_name(string name);
-    void set_health(int health);
-    void set_damage(int damage);
+    void setName(string name);
+    void setHealth(int health);
+    void setDamage(int damage);
 };
 
 #endif

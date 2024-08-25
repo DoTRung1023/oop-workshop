@@ -21,10 +21,10 @@ void Player::takeDamage(int damage){
     this->health -= damage;
     cout << name << " takes " << damage << " damage. Remaining health: " << health << "\n";
 }
-string Player::get_name() {return name;}
-int Player::get_health(){return health;}
-int Player::get_damage(){return damage;}
+string Player::getName() {return name;}
+int Player::getHealth(){return health;}
+int Player::getDamage(){return damage;}
 
-void Player::set_name(string name){this->name = name;}
-void Player::set_health(int health){this->health = health;}
-void Player::set_damage(int damage){this->damage = damage;}
+void Player::setName(string name){this->name = name;}
+void Player::setHealth(int health){this->health = health;}
+void Player::setDamage(int damage){this->damage = damage;}

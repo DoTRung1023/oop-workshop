@@ -7,21 +7,21 @@ using namespace std;
 
 Wizard::Wizard(string name, int health, int damage, int mana){
     // Player(name, health, damage);
-    set_name(name);
-    set_health(health);
-    set_damage(damage);
+    setName(name);
+    setHealth(health);
+    setDamage(damage);
     this->mana = mana;
 }
 
-int Wizard::get_mana(){
+int Wizard::getMana(){
     return mana;
 }
-void Wizard::set_mana(int mana) {
+void Wizard::setMana(int mana) {
     this->mana = mana;
 }
 void Wizard::castSpell(Player* opponent){ 
-    opponent->set_health(opponent->get_health()-get_mana());
-    std::cout << get_name() << " casts a spell on " << opponent->get_name() 
-              << " for " << get_damage() << " damage.\n";
+    opponent->setHealth(opponent->getHealth()-getMana());
+    std::cout << getName() << " casts a spell on " << opponent->getName() 
+              << " for " << getDamage() << " damage.\n";
 }
 

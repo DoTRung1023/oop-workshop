@@ -13,17 +13,17 @@ int main() {
     
     cout << "Let the battle begin!" << endl;
     
-    while (wizard.get_health() > 0 && warrior.get_health() > 0) {
+    while (wizard.getHealth() > 0 && warrior.getHealth() > 0) {
         wizard.castSpell(&warrior);
-        if (warrior.get_health() > 0) {
+        if (warrior.getHealth() > 0) {
             warrior.swingWeapon(&wizard);
         }
     }
     
-    if (wizard.get_health() > 0) {
-        cout << wizard.get_name() << " wins!" << endl;
+    if (wizard.getHealth() > 0) {
+        cout << wizard.getName() << " wins!" << endl;
     } else {
-        cout << warrior.get_name() << " wins!" << endl;
+        cout << warrior.getName() << " wins!" << endl;
     }
     
     return 0;
