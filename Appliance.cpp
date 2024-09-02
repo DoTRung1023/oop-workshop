@@ -25,7 +25,7 @@ int Appliance::get_powerRating(){
 }
 
 bool Appliance::get_isOn() {
-    return get_isOn;
+    return isOn;
 }
 
 double Appliance::getPowerConsumption(){
