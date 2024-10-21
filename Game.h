@@ -64,7 +64,7 @@ public:
                             double distance = Utils::calculateDistance(ship->getPos(), mine->getPos());
                             if (distance <= mineDistanceThreshold) {
                                 Explosion explosion = static_cast<Mine*>(mine)->explode();
-                                explosion.apply(*mine);
+                                explosion.apply(*ship);
                             }
                         }    
                     }
