@@ -13,7 +13,7 @@ private:
 public:
     Explosion(int x, int y) : GameEntity(x, y, 'E') {}
     void apply(GameEntity& entity) {
-        entity = GameEntity(-1, -1, 'X');
+        entity = GameEntity(-1, -1, 'N');
     }
 };
 
